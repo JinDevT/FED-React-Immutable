@@ -17,6 +17,7 @@ yarn add immutable
 ```
 
 ### Immutable.js 사용 할 때 규칙
+
 1. 객체는 **Map**
 2. 배열은 **List**
 3. 설정할 땐 **set**
@@ -26,3 +27,8 @@ yarn add immutable
 7. 일반 자바스크립트 객체로 변환 할 땐 **toJS()**
 8. List 에는 배열 내장함수와 비슷함 함수들이 있다. -push, slice, filter, sort, concat... 전부 불변함을 유지함
 9. 특정 key를 지울때 (혹은 List에서 원소를 지울 때) **delete** 사용
+
+### .get, .getIn 하는게 번거로우면 Record 를 사용하자!
+
+- **Record** 를 사용하면 Immutable 의 set, update, delete 등을 계속 사용할 수 있으면서도, 값을 조회 할 때
+get, getIn 을 사용 할 필요 없이, **data.input** 이런식으로 조회할 수 있습니다. (Typescript 혹은 Flow 같은 시스템을 도입 할 때 유요함.)
