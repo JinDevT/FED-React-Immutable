@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import UserList from './UserList';
 import { Map,List, Record } from 'immutable';
 
-// User 를 위한 Record 생성
+// User 를 위한 Record 생성 test!
 const User = Record({
   id: null,
   username: null
